@@ -1,0 +1,31 @@
+---
+# ScoreHud - Configuration File
+# Plugin by Spritedev
+
+# The title of the scoreboard
+title: "§e§lMy Server"
+
+# The update interval in ticks (20 ticks = 1 second)
+update-interval: 20
+
+# Scoreboard lines
+# Available placeholders:
+# Player: {name}, {display_name}, {health}, {max_health}, {x}, {y}, {z}, {world}
+# Server: {online}, {max_online}, {tps}
+# Economy: {money} (requires BedrockEconomy)
+# Tokens: {tokens} (requires TokensAPI)
+lines:
+  - "§r"
+  - "§6Player: §f{name}"
+  - "§6Online: §f{online}/{max_online}"
+  - "§r"
+  - "§6Money: §f{money}"
+  - "§6Tokens: §f{tokens}"
+  - "§r"
+  - "§6Health: §f{health}/{max_health}"
+  - "§6Location:"
+  - "§f - World: {world}"
+  - "§f - X: {x} Y: {y} Z: {z}"
+  - "§r"
+  - "§eplay.myserver.com"
+...

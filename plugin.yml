@@ -1,0 +1,28 @@
+---
+name: ScoreHud
+version: 1.0.0
+main: Spritedev\scorehud\Main
+api: 5.26.0
+src-namespace-prefix: Spritedev\scorehud
+description: Advanced scoreboard plugin with support for BedrockEconomy, TokensAPI, and more.
+author: Spritedev
+website: https://github.com/Spritedev/ScoreHud
+
+commands:
+  scorehud:
+    description: Main command for ScoreHud plugin
+    usage: "/scorehud <reload|toggle>"
+    permission: scorehud.command
+    aliases: [sh]
+
+permissions:
+  scorehud.command:
+    default: op
+    description: Allows players to use ScoreHud commands
+  scorehud.command.reload:
+    default: op
+    description: Allows players to reload the plugin configuration
+  scorehud.command.toggle:
+    default: true
+    description: Allows players to toggle their scoreboard
+...
