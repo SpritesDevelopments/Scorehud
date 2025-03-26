@@ -1,8 +1,10 @@
---- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/SpritesDevelopments/Scorehud
-build-by-default: true
-branches:
-- main
+---
 projects:
-  Scorehud:
+  ScoreHud:
     path: ""
+    icon: "icon.png"
+    libs:
+      - src: ""
+    lint:
+      phpstan: false
 ...
